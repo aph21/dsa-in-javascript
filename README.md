@@ -1,2 +1,1 @@
-# dsa-in-javascript
-A structured DSA study repository in JavaScript — covering core data structures, algorithms, and problem-solving patterns for technical interview preparation.
+This repository documents my structured journey through Data Structures and Algorithms using JavaScript. Each topic is organized progressively — from foundational concepts like arrays, recursion, and Big O, to advanced structures like trees, graphs, and dynamic programming. Every solution is written in JS with clean, readable code and inline notes explaining the reasoning behind each approach. Built as both a personal learning log and a reference for interview preparation.

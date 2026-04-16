@@ -41,7 +41,59 @@
 //As for DSA it is best to use let always
 
 
-a =10;
-console.log(a)
+// a =10;
+// console.log(a)
 // what is the variable type by default if we didn't assign one? -> is it var or let or const? -> it is var
-console.log(typeof a)
+// console.log(typeof a)
+
+
+// 1. Sum of two numbers
+let a = 10;
+let b = 20;
+console.log(a + b)
+
+// relation between integer and string
+// RULES:
+//RULE 1 :  if string + string = string (concatenation)
+let s1 = "Hello";
+let s2 = " World";
+console.log(typeof(s1 + s2)) //string
+// why we use typeof()? -> to check the type of the variable
+
+
+//RULE 2: if String + Integer = String (Concatenation)
+let s3 = "Hello";
+let temp = 10;
+console.log(s3 + temp)
+console.log(typeof(s3 + temp)) // String
+
+
+//RULE 3: If Integer + Integer = Integer (Addition)
+let x = 10;
+let y = 20;
+console.log(x + y)
+console.log(typeof(x + y)) // number
+
+
+///
+let p = 20;
+let c = 30;
+console.log("The sum of " + p + "and " + c + "is : " + p + c);
+//here output is: The sum of 20and 30is : 2030
+//why? because in JS if we add two strings it will concatenate them also because of rule 1 and rule 2
+// to seperate them as string we need to add bracke or we should use template literals
+//so we need to use template literals
+console.log(`The sum of ${p} and ${c} is : ${p + c}`)
+//output is: The sum of 20 and 30 is : 50
+
+
+// Type Coersion:
+// when we add two different types of variables then JS will convert one type to another type
+// this is called type coersion
+console.log('1' - 1) // '1' is being converted from string to number
+console.log('1' + 1) // '1' is being converted from string to number
+
+//why '1' + 1 is string? -> because in JS if we add two strings it will concatenate them also because of rule 1 and rule 2
+
+
+//Accept and print the answer

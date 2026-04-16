@@ -97,3 +97,19 @@ console.log('1' + 1) // '1' is being converted from string to number
 
 
 //Accept and print the answer
+// we need prompt-sync package so install it
+let prompt = require('prompt-sync')()
+let age = Number(prompt("Enter your age:"))
+console.log("Age: " + age)
+
+// swap two variable via 3 methods
+// method 1: using extra variable
+let a1 = 10;
+let b1 = 20;
+console.log("before swapping a: " + a1)
+console.log("before swapping b: " + b1)
+let t1 = a1;
+a1 = b1;
+b1 = t1;
+console.log("after swapping a: " + a1)
+console.log("after swapping b: " + b1)

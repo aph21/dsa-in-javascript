@@ -51,3 +51,38 @@ console.log((P * Math.pow(1 + (r/100), t) - P).toFixed(2))
 //we want our otp to be between 1000 to 9999
 //so we will multiply it by 9000
 console.log(Math.trunc((Math.random() * 9000) + 1000 ))
+
+
+//3. Area of triangle by heron's formula -> s(s-a)(s-b)(s-c)
+//where s = (a+b+c)/2
+//input -> a = 3, b = 4, c = 5, output = 6
+
+let a = Number(prompt("Enter side a: "));
+let b = Number(prompt("Enter side b: "));
+let c = Number(prompt("Enter side c: "));
+
+let s = (a + b + c) / 2;
+console.log(Math.sqrt(s * (s - a) * (s - b) * (s - c)).toFixed(2));
+
+
+
+
+//4. Circumference and area of circle -> 2 * pi * r
+//input -> r = 5, output = 31.41592653589793
+
+let r1 = prompt("Enter radius: ")
+console.log(2 * Math.PI * r1);
+console.log(Math.PI * r1 * r1);
+
+//swap two numbers without thirs variable -> output format return an array containing two numbers
+//input -> a = 10, b = 20, output = [20, 10]
+
+let a1 = prompt("Enter a: ")
+let b1 = prompt("Enter b: ")
+
+[a1, b1] = [b1, a1]
+console.log([a1, b1])
+
+//5. what is the output of?
+console.log(Math.min(2, 0, -3, 5, -7));
+//output -> -7

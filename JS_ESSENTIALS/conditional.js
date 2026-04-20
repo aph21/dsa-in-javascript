@@ -58,8 +58,48 @@ let prompt = require('prompt-sync')();
 
 
 //4.Accept a year and check if it is a Leap year or not
-let year = Number(prompt("Enter a year: "));
+// let year = Number(prompt("Enter a year: "));
 
-if(year % 4 == 0 && year % 100 != 0) console.log("It is a Leap year!");
-else if(year % 400 == 0) console.log("It is a Leap year");
-else console.log("It is not a Leap year")
+// if(year % 4 == 0 && year % 100 != 0) console.log("It is a Leap year!");
+// else if(year % 400 == 0) console.log("It is a Leap year");
+// else console.log("It is not a Leap year")
+
+//5. Shop discount
+// Amount        |  Discount
+// 0 - 5000      |    0%
+// 5001 - 7000   |    5%
+// 7001 - 9000   |    10%
+// > 9000        |    20%
+
+// let amount = Number(prompt("Enter the amount: "));
+// let payableAmount = 0;
+
+// if(amount > 0 && amount <= 5000) {
+//     payableAmount = amount;
+// }
+// else if(amount > 5000 && amount <= 7000){
+//     payableAmount = amount - (amount * 5)/100;
+// }
+// else if(amount > 7000 && amount <= 9000){
+//     payableAmount = amount - (amount * 10)/100;
+// }
+// else if(amount > 9000){
+//     payableAmount = amount - (amount * 20)/100;
+// }
+// else{
+//     console.log("Invalid amount");
+// }
+
+// console.log("Payable amount: ", payableAmount);
+
+//here we are repeatedly writing code again and again and making the code lengthy, so what we can do is:
+let amt = Number(prompt("Enter the amount: "));
+let dis = 0;
+if (amt > 0 && amt <= 5000) dis = 0;
+else if (amt > 5000 && amt <= 7000) dis = 5;
+else if(amt > 7000 && amt <= 9000) dis = 10;
+else if(amt > 9000) dis = 20;
+else console.log("Invalid amount");
+
+console.log("Payable amount: ", (amt - (amt * dis)/100));
+

@@ -93,13 +93,76 @@ let prompt = require('prompt-sync')();
 // console.log("Payable amount: ", payableAmount);
 
 //here we are repeatedly writing code again and again and making the code lengthy, so what we can do is:
-let amt = Number(prompt("Enter the amount: "));
-let dis = 0;
-if (amt > 0 && amt <= 5000) dis = 0;
-else if (amt > 5000 && amt <= 7000) dis = 5;
-else if(amt > 7000 && amt <= 9000) dis = 10;
-else if(amt > 9000) dis = 20;
-else console.log("Invalid amount");
+// let amt = Number(prompt("Enter the amount: "));
+// let dis = 0;
+// if (amt > 0 && amt <= 5000) dis = 0;
+// else if (amt > 5000 && amt <= 7000) dis = 5;
+// else if(amt > 7000 && amt <= 9000) dis = 10;
+// else if(amt > 9000) dis = 20;
+// else console.log("Invalid amount");
 
-console.log("Payable amount: ", (amt - (amt * dis)/100));
+// console.log("Payable amount: ", (amt - (amt * dis)/100));
 
+
+//6. electricity bill
+// Units          |  Charge
+// 0 - 100        |    Rs. 4.2 per unit
+// 101 - 200      |    Rs. 6 per unit
+// 201 - 400      |    Rs. 8 per unit
+// > 400          |    Rs. 13 per unit
+
+
+// let unit = Number(prompt("enter the unit: "));
+// let amount = 0;
+
+// =====this is a top down approach
+
+// if(unit > 0 && unit <= 100){
+//     amount = unit * 4.2;
+// }
+// else if(unit > 100 && unit <= 200) {
+//     amount = (100 * 4.2) + (unit - 100) * 6;
+// }
+// else if( unit > 200 && unit <= 400) {
+//     amount = (100 * 4.2) + (100 * 6) + (unit - 200) * 8;
+// }
+// else if(unit > 400) {
+//     amount = (100 * 4.2) + (100 * 6) + (200 * 8) + (unit - 400) * 13;
+// }
+// else{
+//     console.log("Invalid unit");
+// }
+
+// console.log("Total amount: ", amount);
+
+
+//===== this is bottom donw approach
+// if(unit > 400) {
+//     amount = (unit - 400) * 13;
+//     unit = 400;
+// }
+// if(unit > 200 && unit <= 400) {
+//     amount = amount + (unit - 200) * 8;
+//     unit = 200;
+// }
+// if(unit > 100 && unit <= 200) {
+//     amount = amount + (unit - 100) * 6;
+//     unit = 100;
+// }
+// amount = amount + (unit * 4.2);
+
+// console.log("Total amount: ", amount);
+
+
+//7. Counting number of days in a given month of the year
+// let month = Number(prompt("Enter a month: "));
+// let year = Number(prompt("Enter a year: "))
+// let days = 0;
+//  if(month == 2) {
+//     if((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0)) days = 29;
+//  }
+//  else if(month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) days = 31;
+//  else  days = 30;
+
+
+//  console.log("Number of days: ", days);

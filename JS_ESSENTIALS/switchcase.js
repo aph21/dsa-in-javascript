@@ -23,41 +23,69 @@
 
 
 let prompt = require('prompt-sync')()
-let day = Number(prompt("Enter a day number"))
+// let day = Number(prompt("Enter a day number"))
 
-switch(day) {
-    case 1: {
-        console.log("MONDAY");
-        break;        
-    }
-    case 2: {
-        console.log("TUESDAY");
-        break;
-    }
-    case 3: {
-        console.log("WEDNESDAY");
-        break;
-    }
-    case 4: {
-        console.log("THURSDAY");
-        break;
-    }
-    case 5: {
-        console.log("FRIDAY");
-        break;
-    }
-    case 6: {
-        console.log("SATURDAY");
-        break;
-    }
-    case 7: {
-        console.log("SUNDAY");
-        break;
-    }
-    default: {
-        console.log("Invalid day");
-    }
-}
+// switch(day) {
+//     case 1: {
+//         console.log("MONDAY");
+//         break;        
+//     }
+//     case 2: {
+//         console.log("TUESDAY");
+//         break;
+//     }
+//     case 3: {
+//         console.log("WEDNESDAY");
+//         break;
+//     }
+//     case 4: {
+//         console.log("THURSDAY");
+//         break;
+//     }
+//     case 5: {
+//         console.log("FRIDAY");
+//         break;
+//     }
+//     case 6: {
+//         console.log("SATURDAY");
+//         break;
+//     }
+//     case 7: {
+//         console.log("SUNDAY");
+//         break;
+//     }
+//     default: {
+//         console.log("Invalid day");
+//     }
+// }
 //what happens if we dont use break statement?
 // it will execute all the cases after the matched case
 // this is called fall through
+
+
+// check consonant and vowels
+let s = prompt("enter a string : ")
+
+let consonent = 0, vowel = 0;
+
+for(let i = 0; i< s.length; i++){
+    let ch = s.charAt(i); 
+    switch(ch) {
+        case 'a' : 
+        case 'e' :
+        case 'i' :
+        case 'o' : 
+        case 'u' :
+        case 'A' :
+        case 'E' :
+        case 'I' :
+        case 'O' :
+        case 'U' : vowel++;
+        break;
+
+        default : consonent++;
+    }
+}
+
+console.log("vowel : ", vowel);
+console.log("consonent : ", consonent);

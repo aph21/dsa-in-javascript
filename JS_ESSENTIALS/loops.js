@@ -202,3 +202,37 @@ let prompt = require("prompt-sync")();
 // let a = Number(prompt("Enter base number: "));
 // let b = Number(prompt("Enter exponent: "));
 // console.log(calculatePower(a, b));
+
+
+
+//11. Strong Number: A number is strong if the sum of factorials of its digits is equal to the number itself.
+//Example: 145 is a strong number because 1! + 4! + 5! = 1 + 24 + 120 = 145
+// the problem has 3 sub tasks:
+//Step 1: Extract each digit from n
+//Step 2: Compute factorial of each digit
+//Step 3: Sum them up → compare with n
+
+// let n = Number(prompt("Enter a number: "));
+// let temp = n;
+// let sumFact = 0;
+// while (n > 0) {
+//     let digit = n % 10;
+//     let fact = 1;
+//     for(let i = 2; i<= digit; i++){
+//         fact = fact * i;
+//     }
+//     sumFact = sumFact + fact;
+//     n = Math.floor(n / 10);
+// }
+// if(sumFact === temp){
+//     console.log("Yes");
+// }else{
+//     console.log("No");
+// }
+
+
+
+
+//=================================================
+
+// 88 while loop: 

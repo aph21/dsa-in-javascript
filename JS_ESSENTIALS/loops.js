@@ -136,4 +136,69 @@ let prompt = require("prompt-sync")();
 // }
 
 //9. Check if the given number is prime or not
+// A prime number is a natural number greater than 1 that has no divisors other than 1 and itself
+// example: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97
+//Key insight: To check if n is prime, you just need to find if any number between 2 and n-1 divides n evenly. If even ONE does then it is not prime
 
+//----Approach 1: Level 1
+// let n = Number(prompt("enter a number:"));
+// let isPrime = true;
+// if(n <= 1){
+//     console.log("not prime");
+// }else{
+//     for(let i = 2; i< n; i++){
+//         if(n % i === 0){
+//             isPrime = false;
+//             break;
+//         }
+//     }
+//     if(isPrime){
+//         console.log("prime");
+//     }else{
+//         console.log("not prime");
+//     }
+// }
+
+//----Approach 2 : Level 2
+// here we will be using i * i <= n instead of i <= n
+// why? -> if n has a factor greater than sqrt(n), it must also have a factor smaller than sqrt(n)
+// let n = Number(prompt("enter a number:"));
+// let isPrime = true;
+// if(n <= 1){
+//     console.log("not prime");
+// }else{
+//     for(let i = 2; i * i <= n; i++){
+//         if(n % i === 0){
+//             isPrime = false;
+//             break;
+//         }
+//     }
+//     if(isPrime){
+//         console.log("prime");
+//     }else{
+//         console.log("not prime");
+//     }
+// }
+
+
+//10. Calculate Power of a Number
+//edge case : 0^0 = undefined,5^0 = 1,0^5 = 0
+// any number raised to power 0 is 1
+// 0 raised to any positive power is 0
+
+// function calculatePower(a, b) {
+//     if(a === 0 && b === 0){
+//         return "Undefined";
+//     }else{
+//         let res = 1;
+//         for(let i = 1; i<= b; i++){
+//             res = res * a;
+//         }
+//         return res;
+//     }
+    
+// }
+
+// let a = Number(prompt("Enter base number: "));
+// let b = Number(prompt("Enter exponent: "));
+// console.log(calculatePower(a, b));

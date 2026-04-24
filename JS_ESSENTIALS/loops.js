@@ -69,6 +69,7 @@ let prompt = require("prompt-sync")();
 // example: factors of 12 are 1, 2, 3, 4, 6, 12
 // *** KEY RULE: A factor of n is always between 1 and n(inclusive)
 
+//------method 1
 // let n = Number(prompt("Enter a number: "));
 // if(n < 0 || n === 0){
 //     console.log("Factors of negative number and 0 are not defined");  
@@ -80,21 +81,59 @@ let prompt = require("prompt-sync")();
 //     }
 // }
 
-//6. Sum of even and odd numbers in range
-let start = Number(prompt("Enter the starting number: "));
-let end = Number(prompt("Enter the ending number: "));
-let sumEven = 0;
-let sumOdd = 0;
+//------method 2
+//example 50 = 1, 2, 5, 10, 25, 50
+//30 = 1, 2, 3, 5, 6 , 10, 15, 30
+// 10 = 1, 2, 5, 10
+// 12 = 1, 2, 3, 4, 6, 12
+// so as you can see that factors of n is always less than or equal to n/2
+// except 1 and n itself
+//so what we can do is: print 1 and n first and then print factors from 2 to n/2
+// let n = Number(prompt("Enter a number: "));
+// if(n < 0 || n === 0){
+//     console.log("Factors of negative number and 0 are not defined");  
+// }else{
+    
+//     for(let i = 1; i<= n/2; i++){
+//         if(n % i === 0){
+//             process.stdout.write(i + " ");
+//         }
+//     }
+//     console.log(n);
+// }
 
-if(start > end) {
-    [start, end] = [end, start];
-}
-for(let i = start; i <= end; i++){
-    if(i % 2 === 0){
-        sumEven = sumEven + i;
-    }else{
-        sumOdd = sumOdd + i;
-    }
-}
-console.log("Sum of even numbers: ", sumEven);
-console.log("Sum of odd numbers: ", sumOdd);
+//6. Sum of even and odd numbers in range
+// let start = Number(prompt("Enter the starting number: "));
+// let end = Number(prompt("Enter the ending number: "));
+// let sumEven = 0;
+// let sumOdd = 0;
+
+// if(start > end) {
+//     [start, end] = [end, start];
+// }
+// for(let i = start; i <= end; i++){
+//     if(i % 2 === 0){
+//         sumEven = sumEven + i;
+//     }else{
+//         sumOdd = sumOdd + i;
+//     }
+// }
+// console.log("Sum of even numbers: ", sumEven);
+// console.log("Sum of odd numbers: ", sumOdd);
+
+//7. Accept an integer and print Hello world n times
+
+// let n = Number(prompt("Enter a number: "));
+// for(let i = 1; i<= n; i++){
+//     console.log("Hello world");
+// }
+
+//8. take an integer and print its table upto 10 terms
+// let n = Number(prompt("Enter the number: "));
+// for(let i = 1; i<= 10; i++){
+//     console.log(`${n} * ${i} = ${n*i}`);
+    
+// }
+
+//9. Check if the given number is prime or not
+

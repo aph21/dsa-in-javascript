@@ -57,7 +57,7 @@ while(temp > 0){
     temp = Math.floor(temp / 10);
 }
 let pow = Math.pow(10, count);
-if(sq % pow == n){
+if(sq % pow === n){
     console.log("Automorphic");
 }else{
     console.log("Not Automorphic");

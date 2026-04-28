@@ -35,3 +35,10 @@ let prompt = require('prompt-sync')();
 //     console.log("\n");
 // }
 // }while(user != computer);
+
+
+//3. Sasta Calculator:
+do{
+    console.log("Enter 1 for addition: ");
+    console.log("Enter 2 for Subtraction: ");
+}while()

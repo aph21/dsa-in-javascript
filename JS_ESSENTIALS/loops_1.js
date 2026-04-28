@@ -89,18 +89,18 @@ let prompt = require("prompt-sync")();
 // so as you can see that factors of n is always less than or equal to n/2
 // except 1 and n itself
 //so what we can do is: print 1 and n first and then print factors from 2 to n/2
-// let n = Number(prompt("Enter a number: "));
-// if(n < 0 || n === 0){
-//     console.log("Factors of negative number and 0 are not defined");  
-// }else{
+let n = Number(prompt("Enter a number: "));
+if(n < 0 || n === 0){
+    console.log("Factors of negative number and 0 are not defined");  
+}else{
     
-//     for(let i = 1; i<= n/2; i++){
-//         if(n % i === 0){
-//             process.stdout.write(i + " ");
-//         }
-//     }
-//     console.log(n);
-// }
+    for(let i = 1; i<= n/2; i++){
+        if(n % i === 0){
+            process.stdout.write(i + " ");
+        }
+    }
+    console.log(n);
+}
 
 //6. Sum of even and odd numbers in range
 // let start = Number(prompt("Enter the starting number: "));

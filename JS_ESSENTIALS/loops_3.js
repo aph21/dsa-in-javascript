@@ -38,25 +38,25 @@ let prompt = require('prompt-sync')();
 
 
 //3. Sasta Calculator:
-let n;
-do{
-    console.log("Enter 1 for addition: ");
-    console.log("Enter 2 for Subtraction: ");
-    n = Number(prompt("Enter a number: "));
-    switch(n){
-        case 1 : {
-            let a = Number(prompt("Enter the 1st number: "));
-            let b = Number(prompt("Enter the 2nd number: "));
-            console.log("Addition: "+ (a+b));
-            break;
-        }
-        case 2 : {
-            let a = Number(prompt("Enter the 1st number: "));
-            let b = Number(prompt("Enter the 2nd number: "));
-            console.log("Subtraction: "+ (a-b));
-            break;
-        }
-        default: console.log("Invalid number");
-    }
-    n = Number(prompt("Enter 3 for recontinue the program: "))
-}while(n == 3);
+// let n;
+// do{
+//     console.log("Enter 1 for addition: ");
+//     console.log("Enter 2 for Subtraction: ");
+//     n = Number(prompt("Enter a number: "));
+//     switch(n){
+//         case 1 : {
+//             let a = Number(prompt("Enter the 1st number: "));
+//             let b = Number(prompt("Enter the 2nd number: "));
+//             console.log("Addition: "+ (a+b));
+//             break;
+//         }
+//         case 2 : {
+//             let a = Number(prompt("Enter the 1st number: "));
+//             let b = Number(prompt("Enter the 2nd number: "));
+//             console.log("Subtraction: "+ (a-b));
+//             break;
+//         }
+//         default: console.log("Invalid number");
+//     }
+//     n = Number(prompt("Enter 3 for recontinue the program: "))
+// }while(n == 3);

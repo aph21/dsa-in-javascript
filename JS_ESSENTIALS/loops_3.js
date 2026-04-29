@@ -90,19 +90,36 @@ let prompt = require('prompt-sync')();
 //example: 12 -> 1, 2, 3, 4, 6 -> sum = 16 -> 16 > 12 -> ✅Abundant number
 // 10 -> 1, 2, 5 -> sum = 8 -> 8 < 10 -> Not Abundant Number
 
-let n = Number(prompt("Enter a number"));
-let sum = 0;
-if(n < 0 || n === 0){
-    console.log("Factors of negative number and 0 are not defined");
-}else{
-    for(let i = 1; i<= n/2; i++){
-        if (n % i === 0){
-            sum = sum + i;
-        }
-    }
-    if(sum > n){
-        console.log("Yes");
-    }else{
-        console.log("No");
-    }
-}
+// let n = Number(prompt("Enter a number"));
+// let sum = 0;
+// if(n < 0 || n === 0){
+//     console.log("Factors of negative number and 0 are not defined");
+// }else{
+//     for(let i = 1; i<= n/2; i++){
+//         if (n % i === 0){
+//             sum = sum + i;
+//         }
+//     }
+//     if(sum > n){
+//         console.log("Yes");
+//     }else{
+//         console.log("No");
+//     }
+// }
+
+// //3. Finding Prime factors of a number
+// let n = Number(prompt("enter a number: "));
+// if(n === 0 || n === 1){
+//     console.log("No prime factors");
+// }
+// else{
+//     for(let i = 2; i<=n; i++){
+//         while(n % i === 0){
+//             console.log(i);
+//             n = Math.floor(n / i)
+//         }
+//     }
+// }
+
+
+//4. Armstrong Number: 

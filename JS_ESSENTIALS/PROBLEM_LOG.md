@@ -1,7 +1,7 @@
 # 📘 DSA Problem Log — JavaScript Essentials
 
 > A personal record of all problems solved, with dates and short theory notes.
-> **Last Updated:** 29-Apr-2026
+> **Last Updated:** 29-Apr-2026 (Evening)
 
 ---
 
@@ -217,7 +217,8 @@
 - **Harshad Number:** A number divisible by the sum of its own digits. (18 → 1+8=9 → 18%9=0 ✅)
 - **Abundant Number:** Sum of proper divisors (excluding itself) > the number. (12 → 1+2+3+4+6=16 > 12 ✅)
 - **Prime Factors:** Repeatedly divide `n` by `i` while divisible → gives prime factorization.
-- **Armstrong Number (to be solved):** Sum of digits each raised to power of (number of digits) = number. (153 = 1³+5³+3³ = 153)
+- **Armstrong Number (aka Narcissistic):** Sum of each digit raised to the power of *total digit count* equals the number. (153 → 3 digits → 1³+5³+3³ = 1+125+27 = 153 ✅). Strategy: use two temp copies — one to count digits, one to extract and power each digit.
+- **Neon Number:** The sum of digits of `n²` equals `n` itself. (9 → 9²=81 → 8+1=9 ✅). Strategy: square the number, then apply digit-sum extraction.
 
 #### ✅ Problems Solved
 | # | Problem | Key Concept |
@@ -228,6 +229,8 @@
 | 4 | Harshad Number Check | Digit sum, divisibility |
 | 5 | Abundant Number Check | Sum of proper divisors using loop up to `n/2` |
 | 6 | Finding Prime Factors | Nested `for` + `while` loop: trial division |
+| 7 | Armstrong Number (Narcissistic) | Two-pass: count digits → power each digit → compare sum with `n` |
+| 8 | Neon Number | Square `n`, extract digit sum, compare with `n` |
 
 ---
 
@@ -242,8 +245,8 @@
 | Switch Case | 2 |
 | For Loops | 11 |
 | While Loops | 4 |
-| Do-While Loops | 6 |
-| **Total** | **46** |
+| Do-While Loops | 8 |
+| **Total** | **48** |
 
 ---
 

@@ -35,7 +35,7 @@ DSA/
 
 | Module | Topics Covered | Problems Solved | Status |
 |--------|---------------|-----------------|--------|
-| **JS Essentials** | Variables, Operators, Math, Conditionals, Switch, For/While/Do-While Loops | 46 | 🟢 In Progress |
+| **JS Essentials** | Variables, Operators, Math, Conditionals, Switch, For/While/Do-While Loops | 48 | 🟢 In Progress |
 | Arrays | — | — | ⬜ Not Started |
 | Strings | — | — | ⬜ Not Started |
 | Recursion | — | — | ⬜ Not Started |

@@ -122,4 +122,58 @@ let prompt = require('prompt-sync')();
 // }
 
 
-//4. Armstrong Number: 
+//4. Armstrong Number: AKA Nercissistic Number
+// Armstrong number is a number that is equals to the sum of its own digits raised to power of total number of digits.
+//example -> 153 -> total digits : 3 -> 1^3 + 5^3 + 3^3 -> 1 + 125 + 27 = 153 ✅Armstrong number
+// let n = Number(prompt("Enter a number: "));
+// let temp1 = n;
+// let temp2 = n;
+// let count = 0;
+// let sum = 0;
+
+// //handling negative numbers
+// if(n < 0) console.log("Not Armstrong");
+// //to count how many digits present using while loop
+// else{
+//     while(temp1 > 0) {
+//     count++;
+//     temp1 = Math.floor(temp1 / 10);
+//     }
+//     // calculate the Armstrong sum
+//     while(temp2 > 0){
+//     let digit = temp2 % 10;
+//     sum = sum + Math.pow(digit, count);
+//     temp2 = Math.floor(temp2 / 10);
+//     }
+//     //final comparision to check if the number is Armstrong or not
+//     if(sum === n){
+//     console.log("Armstrong");
+//     } else{
+//     console.log("Not Armstrong");
+//     }
+// }
+
+
+//5. Neon Number -> sum of digits of its square = the nummber itself
+// 9 -> 9^2 -> 81 -> 8 + 1 -> 9 -> NEON 
+// 10 -> 100 -> 1 + 0 + 0 -> 1 -> Note NEON
+
+let n = Number(prompt("Enter a number: "));
+let sq = n * n;
+let sum = 0;
+if(n < 0){
+    console.log("No");
+}else{
+    while(sq > 0){
+        let digit = sq % 10;
+        sum = sum + digit;
+        sq = Math.floor(sq / 10);
+    }
+    if(sum === n){
+        console.log("Yes");
+    }else{
+        console.log("No");
+    }
+}
+
+

@@ -52,3 +52,5 @@ let arr = new Array(n);
 // }
 // console.log(arr);
 // console.log("Sum of array elements: " + sum);
+
+//3. Max element from the array
